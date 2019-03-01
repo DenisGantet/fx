@@ -12,17 +12,28 @@ body{
 	box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
 }
 
-.titre {
+@media (min-width: 990px) {
+  .titre {
 	font-family: caca;
 	color: tomato;
-	font-size: 8em;
+	font-size: 8vw;
 	margin: 1em 0 0.5em 0;
+  }
 }
+
+@media (max-width: 990px) {
+  .titre {
+	font-family: caca;
+	color: tomato;
+	font-size: 16vw;
+	margin: 1em 0 0.5em 0;
+  }
+}
+
 .paragrph {
 	font-family: caca;
-	font-size: 1em;
-	margin-bottom: 1em;
-
+	font-size: 1.3em;
+	margin-bottom: 4em;
 }
 
 .row {
@@ -30,10 +41,24 @@ body{
 }
 
 footer {
-	margin-top: 5em;
-	height: 15em;
-	background: #485563;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	margin-top: 8em;
+	background: #485563;
+    background: -webkit-linear-gradient(to top, #29323c, #485563);
+    background: linear-gradient(to top, #29323c, #485563);
+}
 
+.icon {
+	transition: all 0.1s;
+	margin: 3em;
+	width: 140px;
+	height: 140px;
+	color: white;
+}
+
+.icon:hover {
+	color: #ff6347;
+}
+
+.y:hover > div > p {
+	color: #ff6347;
 }
